@@ -23,7 +23,18 @@ public class Task1 {
     class Solution {
         public static String whoLikesIt(String... names) {
             //Do your magic here
-            return "";
+            if (names.length == 0) {
+                return "no one likes this";
+            } else if (names.length == 1) {
+                return names[0] + " likes this";
+            } else if (names.length == 2) {
+                return String.format("%s and %s like this", names[0], names[1]);
+            } else if (names.length == 3) {
+                return String.format("%s, %s and %s like this", names[0], names[1], names[2]);
+            } else {
+                int num = names.length - 2;
+                return String.format("%s, %s and %d others like this", names[0], names[1], num);
+            }
         }
     }
 }
