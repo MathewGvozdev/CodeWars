@@ -17,7 +17,12 @@ package com.codewars.Task1;
 public class Task1 {
 
     public static void main(String[] args) {
-
+        System.out.println(Solution.whoLikesIt());
+        System.out.println(Solution.whoLikesIt("Peter"));
+        System.out.println(Solution.whoLikesIt("Peter", "Mathew"));
+        System.out.println(Solution.whoLikesIt("Peter", "Mathew", "Anna"));
+        System.out.println(Solution.whoLikesIt("Peter", "Mathew", "Anna", "John"));
+        System.out.println(Solution.whoLikesIt("Peter", "Mathew", "Anna", "John", "Jacob", "Helen", "Brad", "Jack"));
     }
 
     class Solution {
@@ -38,3 +43,4 @@ public class Task1 {
         }
     }
 }
+
