@@ -13,12 +13,15 @@ package com.codewars.kyu7.Task1;
 public class Task1 {
 
     public static void main(String[] args) {
-
+        System.out.println(Kata.solution("abc", "bc"));
+        System.out.println(Kata.solution("abc", "c"));
+        System.out.println(Kata.solution("abc", "d"));
+        System.out.println(Kata.solution("abc", "cd"));
     }
 
     public class Kata {
         public static boolean solution(String str, String ending) {
-            return false;
+            return str.endsWith(ending);
         }
     }
 
