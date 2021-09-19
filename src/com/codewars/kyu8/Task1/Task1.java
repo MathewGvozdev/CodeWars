@@ -1,4 +1,4 @@
-package com.codewars.Task1;
+package com.codewars.kyu8.Task1;
 
 /**
  * You probably know the "like" system from Facebook and other pages. People can "like" blog posts, pictures or other
