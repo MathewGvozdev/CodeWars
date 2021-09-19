@@ -26,22 +26,13 @@ public class Task3 {
     {
         public static Integer basicMath(String op, int v1, int v2)
         {
-            int result = 0;
-            switch (op) {
-                case "+":
-                    result = v1 + v2;
-                    break;
-                case "-":
-                    result = v1 - v2;
-                    break;
-                case "*":
-                    result = v1 * v2;
-                    break;
-                case "/":
-                    result = v1 / v2;
-                    break;
-            }
-            return result;
+            return switch (op) {
+                case "+" -> v1 + v2;
+                case "-" -> v1 - v2;
+                case "*" -> v1 * v2;
+                case "/" -> v1 / v2;
+                default -> 0;
+            };
         }
     }
 }
