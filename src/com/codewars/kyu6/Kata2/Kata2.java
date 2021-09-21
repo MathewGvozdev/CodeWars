@@ -1,22 +1,17 @@
-package com.codewars.kyu6.Task1;
+package com.codewars.kyu6.Kata2;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
 
 /**
+ *                              Highest Scoring Word
  * Given a string of words, you need to find the highest scoring word.
- * <p>
  * Each letter of a word scores points according to its position in the alphabet: a = 1, b = 2, c = 3 etc.
- * <p>
  * You need to return the highest scoring word as a string.
- * <p>
  * If two words score the same, return the word that appears earliest in the original string.
- * <p>
  * All letters will be lowercase and all inputs will be valid.
  **/
 
-public class Task1 {
+public class Kata2 {
 
     public static void main(String[] args) {
         System.out.println(Kata.high("some words are written here")); //52 79 24 109 36
